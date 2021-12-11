@@ -1,0 +1,41 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &-big {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 35px 20px 50px;
+    background-color: $blue;
+    color: $gray-bg;
+
+    .arrow {
+      margin-left: 20px;
+    }
+  }
+
+  &-outlined {
+    border: 1px solid $blue;
+    color: $blue;
+    padding: 14px 48px;
+  }
+
+  &__scroll-down {
+    padding: 40px 0 40px 40px;
+    background-color: $gray-bg;
+    color: $gray;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    span {
+      height: 1px;
+      width: 100px;
+      background-color: $gray;
+      margin-left: 21px;
+    }
+  }
+}

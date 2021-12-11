@@ -1,0 +1,43 @@
+.intro {
+  background-image: url("../assets/img/picture/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  padding-top: 31.9vh;
+  position: relative;
+
+  .scroll-down {
+    position: absolute;
+    transform: rotate(
+        90deg);
+    right: -80px;
+    bottom: 80px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 123px;
+      height: 122px;
+      background: url("../assets/img/svg/approved.svg") no-repeat center;
+      left: -97px;
+      top: 52px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 53px;
+  }
+
+}

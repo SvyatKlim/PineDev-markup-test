@@ -1,0 +1,43 @@
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/heebo/heebo-v12-latin-regular.eot');
+  src: local(''),
+  url('../assets/fonts/heebo/heebo-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/heebo/heebo-v12-latin-regular.woff2') format('woff2'),
+  url('../assets/fonts/heebo/heebo-v12-latin-regular.woff') format('woff'),
+  url('../assets/fonts/heebo/heebo-v12-latin-regular.ttf') format('truetype'),
+  url('../assets/fonts/heebo/heebo-v12-latin-regular.svg#Heebo') format('svg');
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/heebo/heebo-v12-latin-500.eot');
+  src: local(''),
+  url('../assets/fonts/heebo/heebo-v12-latin-500.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/heebo/heebo-v12-latin-500.woff2') format('woff2'),
+  url('../assets/fonts/heebo/heebo-v12-latin-500.woff') format('woff'),
+  url('../assets/fonts/heebo/heebo-v12-latin-500.ttf') format('truetype'),
+  url('../assets/fonts/heebo/heebo-v12-latin-500.svg#Heebo') format('svg');
+}
+
+@font-face {
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../assets/fonts/libre-caslon-text/librecaslondisplay-regular.woff') format('woff'),
+  url('../assets/fonts/libre-caslon-text/librecaslondisplay-regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../assets/fonts/libre-caslon-text/librecaslontext-regular.woff') format('woff'),
+  url('../assets/fonts/libre-caslon-text/librecaslontext-regular.ttf') format('truetype'),
+}
