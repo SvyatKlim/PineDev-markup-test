@@ -1,4 +1,9 @@
 <header id="header" class="header">
+  <!--  <div class="header-nav__overlay js-nav-overlay">-->
+  <!--  </div>-->
+  <!--  <div class="header-nav__icon js-nav">-->
+  <!--  </div>-->
+
   <div class="header-upper">
     <div class="header-upper__wrapper header__container">
       <div class="header-upper__nav">
@@ -14,29 +19,53 @@
   </div>
   <div class="header__inner header__container">
     <div class="header__logo">
-      @@include('../../assets/img/svg/main-logo.svg')
+      <a class="header__logo__link" href="http://localhost:3000/"> @@include('../../assets/img/svg/main-logo.svg')</a>
     </div>
-    <nav class="header__menu">
-      <ul class="header__menu__inner">
+    <div class="header__menu__icon js-nav">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header__menu__wrapper">
+      <nav class="header__menu">
+        <ul class="header__menu__inner">
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">How It Works</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Price Guide</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Visas</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Migration Kits</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Agents</a>
+          </li>
+          <li class="header__menu__item header__menu__item--btn">
+            <a href="#" class="btn btn-outlined">Ask a Question</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-upper__mobile">
         <li class="header__menu__item">
-          <a href="#" class="header__menu__link">How It Works</a>
+          <a href="#" class="header-upper__link blue regular">Blog (Free Stuff)</a>
         </li>
         <li class="header__menu__item">
-          <a href="#" class="header__menu__link">Price Guide</a>
+          <a href="#" class="header-upper__link blue regular">About Us</a>
         </li>
         <li class="header__menu__item">
-          <a href="#" class="header__menu__link">Visas</a>
+          <a href="#" class="header-upper__link blue regular">Contact</a>
         </li>
         <li class="header__menu__item">
-          <a href="#" class="header__menu__link">Migration Kits</a>
+          <a href="#" class="header-upper__link blue regular">Join as an Agent</a>
         </li>
-        <li class="header__menu__item">
-          <a href="#" class="header__menu__link">Agents</a>
-        </li>
-        <li class="header__menu__item">
-          <a href="#" class="btn btn-outlined">Ask a Question</a>
+        <li class="header__menu__item login-btn">
+          <a href="#" class="header-upper__link blue regular">@@include('../../assets/img/svg/icon-user.svg') Login</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
+
 </header>

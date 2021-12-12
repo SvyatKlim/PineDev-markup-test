@@ -6,6 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/main.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Homepage</title>
 </head>
 <body>
@@ -22,27 +23,233 @@
         <a class="btn btn__scroll-down" href="#">scroll down <span></span></a>
       </aside>
     </section>
-    <section class="steps padding-top padding-bottom">
+    <section class="steps padding-top padding-bottom vertical-hr">
       <div class="container">
         <h2 class="steps__title">3 easy steps to get answers</h2>
-        <h5 class="steps__subtitle"><span class="blue">Time for Advice</span> is here to make your migration experience as seamless as possible</h5>
+        <h5 class="steps__subtitle"><span class="blue">Time for Advice</span> is here to make your migration experience
+          as seamless as possible</h5>
         <div class="steps__items">
           <div class="steps__item">
             <span class="steps__item__number h2">1</span>
-              <h4 class="steps__item__title blue medium">• Submit a question</h4>
+            <h4 class="steps__item__title blue medium">• Submit a question</h4>
             <p>Lectus nunc nunc at habitant amet maecenas eu, aliquam </p>
           </div>
           <div class="steps__item">
             <span class="steps__item__number h2">2</span>
-            <h4 class="steps__item__title blue medium">• Submit a question</h4>
-            <p>Lectus nunc nunc at habitant amet maecenas eu, aliquam </p>
+            <h4 class="steps__item__title blue medium">• Submit an expert</h4>
+            <p>Gravida turpis dictum vestibulum netus vel donec senectus sed cras nunc </p>
           </div>
           <div class="steps__item">
             <span class="steps__item__number h2">3</span>
-            <h4 class="steps__item__title blue medium">• Submit a question</h4>
-            <p>Lectus nunc nunc at habitant amet maecenas eu, aliquam </p>
+            <h4 class="steps__item__title blue medium">• Answered within 24h</h4>
+            <p>Condimentum nunc, in congue pellentesque facilisis enim facilisis vel donec </p>
           </div>
         </div>
+        <a href="#" class="btn-mt-80 btn btn-big">get started @@include('../assets/img/svg/arrow.svg')</a>
+      </div>
+    </section>
+    <section class="agents padding-top padding-bottom vertical-hr">
+      <div class="container">
+        <h2 class="agents__title">Find your agent</h2>
+        <h5 class="agents__subtitle">Eros lectus dui placerat faucibus massa, dolor libero. Donec commodo at neque
+          pellentesque aliquet</h5>
+
+        <div class="swiper agents__carousel js-agents">
+          <div class="swiper-wrapper agents__items">
+            <div class="swiper-slide agents__item">
+              <div class="agents__item__wrapper">
+                <div class="agents__item__img">
+                  <img src="./assets/img/picture/agent-1.jpg" alt="agent Filippo">
+                </div>
+                <div class="agents__item__person">
+                  <h4 class="agents__item__person__name medium title-libre">
+                    Filippo Pellegrino
+                    <span>@@include('../assets/img/svg/icon-checked.svg')</span>
+                  </h4>
+                  <div class="agents__item__person__rating">
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star-gray.svg')
+                  </div>
+                  <p class="agents__item__person__location blue">
+                    <span>@@include('../assets/img/svg/icon-position.svg')</span>
+                    Perth
+                  </p>
+                </div>
+                <p class="agents__item__description ">
+                  Specialized in Business Sponsorships, Partner Visa, Work Visa
+                </p>
+                <div class="agents__item__work-place"><span>@@include('../assets/img/svg/icon-bank.svg')</span>
+                  <p class="gray-text">Migration Agents Registration Authority (Australia)</p></div>
+                <div class="agents__item__btn">
+                  <a href="#" class="btn btn-outlined">Ask a Question</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide agents__item">
+              <div class="agents__item__wrapper">
+                <div class="agents__item__img">
+                  <img src="./assets/img/picture/agent-2.jpg" alt="agent Filippo">
+                </div>
+                <div class="agents__item__person">
+                  <h4 class="agents__item__person__name medium title-libre">
+                    Fiona Carre
+                    <span>@@include('../assets/img/svg/icon-checked.svg')</span>
+                  </h4>
+                  <div class="agents__item__person__rating">
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                  </div>
+                  <p class="agents__item__person__location blue">
+                    <span>@@include('../assets/img/svg/icon-position.svg')</span>
+                    Brisbane
+                  </p>
+                </div>
+                <p class="agents__item__description ">
+                  Specialized in Visa for Australia, Partner Visa, Work Visa
+                </p>
+                <div class="agents__item__work-place"><span>@@include('../assets/img/svg/icon-bank.svg')</span>
+                  <p class="gray-text">Migration Agents Registration Authority (Australia)</p></div>
+                <div class="agents__item__btn">
+                  <a href="#" class="btn btn-outlined">Ask a Question</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide agents__item">
+              <div class="agents__item__wrapper">
+                <div class="agents__item__img">
+                  <img src="./assets/img/picture/agent-3.jpg" alt="agent Filippo">
+                </div>
+                <div class="agents__item__person">
+                  <h4 class="agents__item__person__name medium title-libre">
+                    Stephen Cooper
+                    <span>@@include('../assets/img/svg/icon-checked.svg')</span>
+                  </h4>
+                  <div class="agents__item__person__rating">
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star-gray.svg')
+                    @@include('../assets/img/svg/icon-star-gray.svg')
+                  </div>
+                  <p class="agents__item__person__location blue">
+                    <span>@@include('../assets/img/svg/icon-position.svg')</span>
+                    Auckland
+                  </p>
+                </div>
+                <p class="agents__item__description ">
+                  Specialized in Partner Visa, Work Visa, Citizenships
+                </p>
+                <div class="agents__item__work-place"><span>@@include('../assets/img/svg/icon-bank.svg')</span>
+                  <p class="gray-text">Immigration Advisers Authority (New Zealand)</p></div>
+                <div class="agents__item__btn">
+                  <a href="#" class="btn btn-outlined">Ask a Question</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide agents__item">
+              <div class="agents__item__wrapper">
+                <div class="agents__item__img">
+                  <img src="./assets/img/picture/agent-1.jpg" alt="agent Filippo">
+                </div>
+                <div class="agents__item__person">
+                  <h4 class="agents__item__person__name medium title-libre">
+                    Filippo Pellegrino
+                    <span>@@include('../assets/img/svg/icon-checked.svg')</span>
+                  </h4>
+                  <div class="agents__item__person__rating">
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star-gray.svg')
+                  </div>
+                  <p class="agents__item__person__location blue">
+                    <span>@@include('../assets/img/svg/icon-position.svg')</span>
+                    Perth
+                  </p>
+                </div>
+                <p class="agents__item__description ">
+                  Specialized in Business Sponsorships, Partner Visa, Work Visa
+                </p>
+                <div class="agents__item__work-place"><span>@@include('../assets/img/svg/icon-bank.svg')</span>
+                  <p class="gray-text">Migration Agents Registration Authority (Australia)</p></div>
+                <div class="agents__item__btn">
+                  <a href="#" class="btn btn-outlined">Ask a Question</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide agents__item">
+              <div class="agents__item__wrapper">
+                <div class="agents__item__img">
+                  <img src="./assets/img/picture/agent-2.jpg" alt="agent Filippo">
+                </div>
+                <div class="agents__item__person">
+                  <h4 class="agents__item__person__name medium title-libre">
+                    Fiona Carre
+                    <span>@@include('../assets/img/svg/icon-checked.svg')</span>
+                  </h4>
+                  <div class="agents__item__person__rating">
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                  </div>
+                  <p class="agents__item__person__location blue">
+                    <span>@@include('../assets/img/svg/icon-position.svg')</span>
+                    Brisbane
+                  </p>
+                </div>
+                <p class="agents__item__description ">
+                  Specialized in Visa for Australia, Partner Visa, Work Visa
+                </p>
+                <div class="agents__item__work-place"><span>@@include('../assets/img/svg/icon-bank.svg')</span>
+                  <p class="gray-text">Migration Agents Registration Authority (Australia)</p></div>
+                <div class="agents__item__btn">
+                  <a href="#" class="btn btn-outlined">Ask a Question</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide agents__item">
+              <div class="agents__item__wrapper">
+                <div class="agents__item__img">
+                  <img src="./assets/img/picture/agent-3.jpg" alt="agent Filippo">
+                </div>
+                <div class="agents__item__person">
+                  <h4 class="agents__item__person__name medium title-libre">
+                    Stephen Cooper
+                    <span>@@include('../assets/img/svg/icon-checked.svg')</span>
+                  </h4>
+                  <div class="agents__item__person__rating">
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star.svg')
+                    @@include('../assets/img/svg/icon-star-gray.svg')
+                    @@include('../assets/img/svg/icon-star-gray.svg')
+                  </div>
+                  <p class="agents__item__person__location blue">
+                    <span>@@include('../assets/img/svg/icon-position.svg')</span>
+                    Auckland
+                  </p>
+                </div>
+                <p class="agents__item__description ">
+                  Specialized in Partner Visa, Work Visa, Citizenships
+                </p>
+                <div class="agents__item__work-place"><span>@@include('../assets/img/svg/icon-bank.svg')</span>
+                  <p class="gray-text">Immigration Advisers Authority (New Zealand)</p></div>
+                <div class="agents__item__btn">
+                  <a href="#" class="btn btn-outlined">Ask a Question</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="btns-sliders">
+            <div class="swiper-button-prev">@@include('../assets/img/svg/arrow.svg')</div>
+            <div class="swiper-button-next">@@include('../assets/img/svg/arrow.svg')</div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-mt-80 btn btn-big">get started @@include('../assets/img/svg/arrow.svg')</a>
       </div>
     </section>
   </main>

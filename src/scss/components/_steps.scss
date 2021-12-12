@@ -1,5 +1,6 @@
 .steps{
   background-color: $gray-bg;
+  position: relative;
   &__items{
     display: flex;
     width: 100%;

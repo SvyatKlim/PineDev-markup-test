@@ -1,7 +1,7 @@
-export default function navMobile(btn = '.js-nav', nav =  '.js-nav-aside', overlay = '.js-nav-overlay'){
+export default function navMobile(btn = '.js-nav', nav = '.js-nav-aside', overlay = '.js-nav-overlay') {
 
-  function openNav(){
-    $(btn).each((i, el) =>{
+  function openNav() {
+    $(btn).each((i, el) => {
       $(el).addClass('active');
     });
 
@@ -9,28 +9,31 @@ export default function navMobile(btn = '.js-nav', nav =  '.js-nav-aside', overl
     $(overlay).addClass('open');
   }
 
-  function closeNav(){
+  function closeNav() {
     $(btn).each((i, el) => {
       $(el).removeClass('active');
     });
-
     $(nav).addClass('close').removeClass('open');
     $(overlay).removeClass('open').addClass('close');
-    setTimeout(()=>{
+    setTimeout(() => {
       $(overlay).removeClass('close');
     }, 800);
   }
 
+  $('.menu-item a').on('click', () => {
+    closeNav()
+  })
+
   $(btn).on('click', (ev) => {
-    if($(ev.currentTarget).hasClass('active')){
+    if ($(ev.currentTarget).hasClass('active')) {
       closeNav();
-    }else{
+    } else {
       openNav();
     }
   });
 
   $(overlay).on('click', (ev) => {
-    if($(ev.target).is($(overlay))){
+    if ($(ev.target).is($(overlay))) {
       closeNav();
     }
   });

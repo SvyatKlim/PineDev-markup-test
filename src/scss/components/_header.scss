@@ -12,13 +12,23 @@
     margin: 0 auto;
   }
 
+  &__logo__link {
+    display: inline-flex;
+  }
+
   &__inner {
     width: 100%;
     padding: 20px 120px 0;
     display: flex;
     justify-content: space-between;
     position: relative;
-    &:after{
+    transition: background-color 0.3s;
+
+    .header-fixed & {
+      background-color: $white;
+    }
+
+    &:after {
       content: '';
       position: absolute;
       width: 80%;
@@ -28,21 +38,44 @@
       bottom: 0;
     }
   }
-  &__menu{
+
+  &__menu {
     margin-top: 3px;
-    &__inner{
+
+    &__icon {
+      display: none;
+      position: relative;
+
+      span {
+        width: 24px;
+        height: 2px;
+        background-color: $blue;
+        position: absolute;
+        right: 0;
+        top: 20px;
+
+        &:last-child {
+          top: 25px;
+        }
+      }
+    }
+
+    &__inner {
       display: flex;
       align-items: center;
       padding-bottom: 20px;
       border-bottom: 3px solid $white;
     }
-    &__item{
+
+    &__item {
       margin-right: 60px;
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
     }
-    &__link{
+
+    &__link {
       font-size: 18px;
       font-weight: 400;
       line-height: 1.4;
@@ -53,6 +86,15 @@
   &-upper {
     width: 100%;
     background-color: $white;
+    transition: background-color 0.3s;
+
+    &__mobile {
+      display: none;
+    }
+
+    .header-fixed & {
+      background-color: $gray-bg;
+    }
 
     &__wrapper {
       display: flex;
@@ -80,14 +122,91 @@
   }
 
   @media screen and (max-width: 1680px) {
+    &__menu {
+      &__item {
+        margin-right: 30px;
+      }
+    }
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1366px) {
+    &__logo {
+      .logo {
+        width: 270px;
+      }
+    }
+    &-upper {
+      &__link {
+        margin-right: 30px;
+      }
+    }
+    &__menu {
+      &__link {
+        font-size: 16px;
+      }
+    }
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1280px) {
+    &__menu__item {
+      margin-right: 20px;
+    }
+    &-upper__wrapper {
+      padding: 9px 30px 10px
+    }
+    &__inner {
+      padding: 20px 30px 0;
+
+      &:after {
+        left: 30px;
+      }
+    }
+    &__logo .logo {
+      width: 240px;
+    }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 992px) {
+    &-upper {
+      display: none;
+    }
+    &__inner {
+      &:after {
+        width: 90%;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        width: 15%;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: $white;
+      }
+    }
+    &__menu {
+      &__icon {
+        display: flex;
+        transition: tranform;
+        &.active{
+
+        }
+      }
+
+      &__wrapper {
+        display: none;
+
+        &.open {
+          display: flex;
+          position: absolute;
+          top: 0;
+          width: 100vw;
+          left: 0;
+          height: 100vh;
+          background-color: white;
+          padding: 85px 35px;
+        }
+      }
+    }
   }
 }

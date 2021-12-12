@@ -1,6 +1,12 @@
-import detectBrowser from './components/detectBrowser';
+import headerOnScroll from "./components/headerOnScroll";
+import carousel from "./components/carousel";
+import navMobile from "./components/navMobile";
+import scrollToAnchor from "./components/scrollToAnchor";
 
 
 $(document).ready(() => {
-  detectBrowser();
+  headerOnScroll();
+  carousel('.js-agents');
+  navMobile()
+  scrollToAnchor();
 });
