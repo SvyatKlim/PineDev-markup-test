@@ -1,12 +1,14 @@
 .agents {
-  &__carousel{
+  &__carousel {
     margin-top: 60px;
     padding-top: 40px;
   }
+
   &__item {
     width: 33.3%;
     padding: 33px 32px;
-    cursor:grab;
+    cursor: grab;
+
     &:active {
       cursor: grabbing;
       cursor: -moz-grabbing;
@@ -26,6 +28,7 @@
         width: 84px;
         height: 80px;
         background: url("../assets/img/svg/top-agent.svg") no-repeat center;
+        background-size: contain;
         left: -30px;
         top: -31px;
       }
@@ -47,6 +50,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        word-wrap: break-word;
 
         span {
           display: inline-flex;
@@ -98,6 +102,61 @@
       span {
         display: inline-flex;
         margin-right: 14px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1536px) {
+    &__item {
+      padding: 20px 18px;
+
+      &__wrapper {
+        &::before {
+          width: 64px;
+          height: 60px;
+          left: -15px;
+          top: -22px;
+        }
+      }
+
+      &__person {
+        margin-left: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__item {
+      padding: 24px 16px 30px;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__item__person {
+      margin-left: 0;
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    background-color: $gray-bg;
+    &__item {
+      background-color: $white;
+      padding: 0;
+      &__wrapper {
+        padding: 16px 16px 30px;
+        box-shadow: none;
+      }
+
+      &__img {
+        width: 96px;
+      }
+
+      &__person {
+        margin-left: 20px;
+        margin-top: 0;
+        width: auto;
       }
     }
   }

@@ -5,6 +5,10 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
+  &-question {
+    display: none;
+  }
+
   &-mt-80 {
     margin-top: 80px;
   }
@@ -46,6 +50,46 @@
   @media screen and (max-width: 1680px) {
     &-outlined {
       padding: 14px 35px;
+    }
+  }
+  @media screen and (max-width: 1366px) {
+    &-big {
+      padding: 15px 25px 15px 35px;
+    }
+    &__scroll-down {
+      padding: 30px 0 30px 30px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &-mt-80 {
+      margin-top: 60px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &-mt-80 {
+      margin-top: 60px;
+    }
+    &-question {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      z-index: 3;
+      bottom: 0;
+
+      .btn-big {
+        width: 100%;
+        padding: 30px 45px 30px 65px;
+      }
+    }
+  }
+  @media screen and (max-width: 340px) {
+    &-big {
+      font-size: 14px;
+    }
+    &-question {
+      .btn-big {
+        padding: 20px 45px 20px 65px
+      }
     }
   }
 }

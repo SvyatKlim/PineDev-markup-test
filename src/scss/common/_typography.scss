@@ -79,7 +79,8 @@ button {
 .blue {
   color: $blue;
 }
-.gray-text{
+
+.gray-text {
   color: $gray-text;
 }
 
@@ -94,112 +95,60 @@ button {
 
 @media screen and (max-width: 1680px) {
   h1, .h1 {
+    font-size: 68px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  h4, .h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  h1, .h1 {
     font-size: 52px;
-
-    .single-post & {
-      font-size: 50px;
-    }
   }
-
-
-  h3, .h3 {
-    font-size: 28px;
-  }
-
-  h4, .h4 {
-    font-size: 20px;
-  }
-  h5, .h5 {
-    font-size: 18px;
-  }
-  .small-text {
-    font-size: 16px;
-  }
-  p,
-  .p {
-    font-size: 18px;
-
-    &.small-text {
-      font-size: 16px;
-    }
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  h1, .h1 {
-    font-size: 48px;
-  }
-
-  h5, .h5 {
-    font-size: 16px;
-  }
-  p,
-  .p {
-    font-size: 16px;
-
-
-    &.small-text {
-      font-size: 14px;
-    }
-  }
-}
-
-@media screen and (max-width: 1250px) {
   h2, .h2 {
-    font-size: 36px;
-  }
-  h4, .h4 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  h1, .h1 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  h5, .h5 {
-    font-size: 14px;
-  }
-  h3, .h3 {
-    font-size: 24px;
-  }
-  h4, .h4 {
-    font-size: 16px;
-  }
-  .subtitle {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  h1, .h1 {
     font-size: 32px;
   }
-  h2, .h2 {
-    font-size: 28px;
-  }
   h5, .h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 992px) {
   h1, .h1 {
-    font-size: 26px;
+    font-size: 42px;
   }
   h2, .h2 {
-    font-size: 22px;
+    font-size: 27px;
   }
   h3, .h3 {
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  //h5, .h5 {
+  //  font-size: 16px;
+  //}
+}
+
+@media screen and (max-width: 768px) {
+  h3, .h3 {
+    font-size: 18px;
+  }
+  p, .p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 340px) {
+  h1, .h1 {
+    font-size: 38px;
+  }
+  h2, .h2 {
+    font-size: 23px;
   }
   h4, .h4 {
-    font-size: 13px;
-  }
-  a, button {
-    font-size: 12px;
+    font-size: 14px;
   }
 }

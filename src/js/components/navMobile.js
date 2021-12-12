@@ -6,7 +6,7 @@ export default function navMobile(btn = '.js-nav', nav = '.js-nav-aside', overla
     });
 
     $(nav).removeClass('close').addClass('open');
-    $(overlay).addClass('open');
+    $(overlay).addClass('open-menu');
   }
 
   function closeNav() {
@@ -14,7 +14,7 @@ export default function navMobile(btn = '.js-nav', nav = '.js-nav-aside', overla
       $(el).removeClass('active');
     });
     $(nav).addClass('close').removeClass('open');
-    $(overlay).removeClass('open').addClass('close');
+    $(overlay).removeClass('open-menu').addClass('close');
     setTimeout(() => {
       $(overlay).removeClass('close');
     }, 800);
